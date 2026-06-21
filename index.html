@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roshan & Umesha - Wedding Invitation</title>
+  <meta name="description" content="We invite you to celebrate the wedding of Roshan Sanjeewa and Umesha Erandi on Sunday, July 19, 2026 at Hotel Ferola. Please RSVP here.">
+  
+  <!-- SEO Meta Tags -->
+  <meta property="og:title" content="Roshan & Umesha's Wedding Invitation">
+  <meta property="og:description" content="Join us on July 19, 2026 at Hotel Ferola to celebrate our wedding. RSVP online.">
+  <meta property="og:type" content="website">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Google Identity Services (GSI) -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- JavaScript (Deferred) -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Background Music Widget -->
+  <div class="music-widget" id="music-widget-container" aria-label="Toggle background music">
+    <button class="music-toggle" id="music-btn" type="button">
+      <span class="music-icon" id="music-icon">🎵</span>
+      <div class="visualizer" id="music-visualizer">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </button>
+    <audio id="bg-audio" loop preload="auto">
+      <source src="https://assets.mixkit.co/music/preview/mixkit-love-story-2185.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <!-- Main Container -->
+  <div class="site-container">
+    
+    <!-- Hero Section -->
+    <header class="hero-section" id="home">
+      <!-- Falling petals container -->
+      <div class="petals-container" id="petals-canvas"></div>
+      
+      <div class="hero-content">
+        <p class="hero-subtitle fade-in">The Wedding Invitation of</p>
+        <h1 class="hero-title fade-in">Roshan & Umesha</h1>
+        <div class="divider fade-in">
+          <span class="divider-line"></span>
+          <span class="divider-heart">♥</span>
+          <span class="divider-line"></span>
+        </div>
+        <p class="hero-date fade-in">Sunday, July 19, 2026</p>
+        <p class="hero-location fade-in">Hotel Ferola</p>
+        <a href="#rsvp" class="btn btn-primary fade-in">RSVP Now</a>
+      </div>
+      
+      <div class="scroll-indicator fade-in">
+        <span>Scroll Down</span>
+        <div class="arrow-down"></div>
+      </div>
+    </header>
+
+    <!-- Countdown Section -->
+    <section class="countdown-section">
+      <div class="section-container">
+        <h2 class="countdown-heading">Counting Down to the Big Day</h2>
+        <div class="countdown-grid" id="countdown-timer">
+          <div class="countdown-item">
+            <span class="number" id="days">00</span>
+            <span class="label">Days</span>
+          </div>
+          <div class="countdown-item">
+            <span class="number" id="hours">00</span>
+            <span class="label">Hours</span>
+          </div>
+          <div class="countdown-item">
+            <span class="number" id="minutes">00</span>
+            <span class="label">Minutes</span>
+          </div>
+          <div class="countdown-item">
+            <span class="number" id="seconds">00</span>
+            <span class="label">Seconds</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Poetic Invitation Section with Combined Animation -->
+    <section class="poetry-section" id="story">
+      <div class="section-container">
+        
+        <!-- Combined Cute Hand-Holding Couple Centerpiece -->
+        <div class="couple-scene-container" id="couple-scene">
+          <div class="couple-portrait-frame">
+            <img src="wedding_couple.png" alt="Roshan and Umesha Illustration" class="couple-portrait-image">
+            <div class="heart-particles-container">
+              <span class="heart-particle heart-1">♥</span>
+              <span class="heart-particle heart-2">♥</span>
+              <span class="heart-particle heart-3">♥</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-header">
+          <p class="section-subtitle">We Are Getting Married</p>
+          <h2 class="section-title">Roshan & Umesha</h2>
+          <div class="title-decorator"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Details Section -->
+    <section class="details-section" id="details">
+      <div class="section-container">
+        <div class="section-header">
+          <p class="section-subtitle">The Celebration</p>
+          <h2 class="section-title">Wedding Details</h2>
+          <div class="title-decorator"></div>
+          <p class="details-intro">Roshan and Umesha are going to take hand to hand, starting their journey of a lifetime. They cordially invite you to join them in celebrating their special day.</p>
+        </div>
+        </div>
+
+        <div class="details-grid">
+          
+          <!-- Date & Time Card -->
+          <div class="detail-card">
+            <div class="detail-icon-wrapper">
+              <svg class="detail-svg" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <!-- Base card -->
+                <rect x="8" y="12" width="48" height="44" rx="8" fill="none" stroke="var(--color-gold)" stroke-width="2.5"/>
+                <line x1="8" y1="25" x2="56" y2="25" stroke="var(--color-gold)" stroke-width="2.5"/>
+                <!-- Ring loops -->
+                <path d="M18 6 v12 M32 6 v12 M46 6 v12" stroke="var(--color-plum)" stroke-width="3.5" stroke-linecap="round"/>
+                <!-- Grid dots -->
+                <circle cx="20" cy="34" r="2.5" fill="var(--color-plum)"/>
+                <circle cx="32" cy="34" r="2.5" fill="var(--color-plum)"/>
+                <circle cx="44" cy="34" r="2.5" fill="var(--color-plum)"/>
+                <circle cx="20" cy="46" r="2.5" fill="var(--color-plum)"/>
+                <!-- marked date with a heart -->
+                <path d="M32 41 C30 39, 27.5 39, 27.5 41.5 C27.5 44, 32 47, 32 47 C32 47, 36.5 44, 36.5 41.5 C36.5 39, 34 39, 32 41 Z" fill="#E95B7D"/>
+                <circle cx="44" cy="46" r="2.5" fill="var(--color-plum)"/>
+              </svg>
+            </div>
+            <h3>When</h3>
+            <p class="main-info">Sunday, July 19, 2026</p>
+            <p class="sub-info">at 11:00 AM</p>
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Roshan+%26+Umesha%27s+Wedding&dates=20260719T053000Z/20260719T113000Z&details=You+are+cordially+invited+to+the+wedding+of+Roshan+Sanjeewa+and+Umesha+Erandi+at+Hotel+Ferola.&location=Hotel+Ferola" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-detail-action">Add to Calendar</a>
+          </div>
+
+          <!-- Venue Card -->
+          <div class="detail-card">
+            <div class="detail-icon-wrapper">
+              <svg class="detail-svg" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <!-- Ground shadow -->
+                <ellipse cx="32" cy="56" rx="16" ry="4" fill="var(--color-gold)" opacity="0.5"/>
+                <!-- Pin outline -->
+                <path d="M32 6 C20 6, 12 14, 12 26 C12 39, 32 56, 32 56 C32 56, 52 39, 52 26 C52 14, 44 6, 32 6 Z" fill="none" stroke="var(--color-plum)" stroke-width="2.5" stroke-linejoin="round"/>
+                <!-- Center details -->
+                <circle cx="32" cy="24" r="9" fill="none" stroke="var(--color-gold)" stroke-width="2"/>
+                <path d="M32 21.5 C31 20, 29.5 20, 29.5 21.5 C29.5 23, 32 25.5 32 25.5 C32 25.5, 34.5 23, 34.5 21.5 C34.5 20, 33 20, 32 21.5 Z" fill="#E95B7D"/>
+              </svg>
+            </div>
+            <h3>Where</h3>
+            <p class="main-info">Hotel Ferola</p>
+            <p class="sub-info">Ceremonial Banquet Hall</p>
+            <a href="https://maps.app.goo.gl/gaDcGPyQWzQCWRUf6" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-detail-action">View on Map</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section class="rsvp-section" id="rsvp">
+      <!-- Success Confetti Canvas -->
+      <canvas id="confetti-canvas" class="confetti-canvas"></canvas>
+      
+      <div class="section-container">
+        <div class="section-header">
+          <p class="section-subtitle">Be Our Guest</p>
+          <h2 class="section-title">Kindly Reply</h2>
+          <div class="title-decorator"></div>
+        </div>
+
+        <div class="rsvp-form-container">
+          
+          <!-- STATE 1: LOGGED OUT STATE (Google Sign-In Prompt) -->
+          <div id="rsvp-logged-out" class="auth-state-container">
+            <div class="auth-icon">🔒</div>
+            <h3>Please Sign In</h3>
+            <p class="auth-prompt-text">Before responding, you should need to login with your Google account.</p>
+            <div class="gsi-button-wrapper">
+              <!-- Google Identity Services Button Container -->
+              <div id="google-login-btn"></div>
+            </div>
+          </div>
+
+          <!-- STATE 2: LOGGED IN STATE (RSVP Form - initially hidden) -->
+          <div id="rsvp-logged-in" class="auth-state-container" style="display: none;">
+            
+            <!-- User Profile Widget -->
+            <div class="user-profile-header">
+              <img id="user-avatar" src="" alt="Google Profile Avatar" class="user-avatar">
+              <div class="user-info">
+                <span class="user-greeting">Welcome, <strong id="user-display-name">Guest</strong></span>
+                <span id="user-email-address" class="user-email">guest@gmail.com</span>
+              </div>
+              <button type="button" class="btn-signout" id="google-logout-btn" title="Sign out of Google">Sign Out</button>
+            </div>
+
+            <!-- RSVP Input Form -->
+            <form id="rsvp-form" class="rsvp-form">
+              <div class="form-group">
+                <label for="guest-name">Your Name</label>
+                <input type="text" id="guest-name" name="name" placeholder="Confirm your name" required>
+              </div>
+
+              <div class="form-group">
+                <label>Will you attend Roshan & Umesha's wedding?</label>
+                <div class="radio-group">
+                  <label class="radio-label">
+                    <input type="radio" name="status" value="Attending" checked required>
+                    <span class="custom-radio"></span>
+                    Joyfully Accept
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="status" value="Declined">
+                    <span class="custom-radio"></span>
+                    Regretfully Decline
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-submit" id="rsvp-submit-btn">
+                  <span class="btn-text-content">Send RSVP Response</span>
+                  <span class="spinner" id="rsvp-spinner" style="display: none;"></span>
+                </button>
+              </div>
+              
+              <div id="rsvp-error" class="rsvp-error-message" style="display: none;"></div>
+            </form>
+          </div>
+
+          <!-- STATE 3: RSVP SUCCESS OVERLAY (Hidden Initially) -->
+          <div class="rsvp-success-card" id="rsvp-success" style="display: none;">
+            <div class="success-icon">✨</div>
+            <h3 id="success-heading">Thank You!</h3>
+            <p id="success-text">Your response has been saved successfully in our guest list.</p>
+            <div class="success-actions">
+              <button type="button" class="btn btn-secondary" id="edit-rsvp-btn">Update RSVP Details</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="section-container">
+        <p class="footer-quote">"Two lives, two hearts, joined together in friendship, united forever in love."</p>
+        <p class="footer-names">Roshan & Umesha</p>
+        <p class="footer-details">July 19, 2026 • Hotel Ferola</p>
+        <div class="footer-divider"></div>
+        <p class="copyright">Designed with ♥ for Roshan and Umesha. Verified Google response synced to Sheets.</p>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
